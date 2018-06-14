@@ -1,22 +1,19 @@
 body{
     background-color: azure;
+    text-align: center;
     margin: 0;
 }
-#header{
-    top: 0;
-    background-color: aqua;
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-}
-#main_container {
-    width:100%;
-    padding:0 0 0 0;
-    position: relative;
-    background-color: aquamarine;
+.top-container {
+    background-color: #f1f1f1;
+    padding: 30px;
     text-align: center;
-    border-radius: 25px;
 }
-#main_body {
-    background-color: yellow;
+.header{
+    background: #555;
+    color: #f1f1f1;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
