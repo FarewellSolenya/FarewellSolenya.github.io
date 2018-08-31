@@ -1,10 +1,10 @@
 function onLoad(){
     var header = document.getElementById("myHeader");
-    var body = document.getElementById("main_body");
-    var sticky = header.offsetTop;
+    var body = document.getElementById("myContent");
+    var offsetTop = header.offsetTop;
     var y = header.clientHeight;
     window.onscroll = function(){
-        if (window.pageYOffset >= sticky) {
+        if (window.pageYOffset >= offsetTop) {
             header.classList.add("sticky");
             body.style.paddingTop = y +'px';
             

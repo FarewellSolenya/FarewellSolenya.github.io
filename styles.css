@@ -2,24 +2,20 @@ body{
     background-color: azure;
     margin: 0;
 }
-#myHeader {
+.header {
     padding: 10px 16px;
     background: #555;
     color: #f1f1f1;
 }
-#main_container {
-    width:100%;
-    padding:0 0 0 0;
-    position: relative;
-    background-color: aquamarine;
-    text-align: center;
-    border-radius: 25px;
-}
-#main_body {
+.content{
     background-color: red;
+    text-align: center;
 }
 .sticky {
     position: fixed;
     top: 0;
     width: 100%
-  }
+}
+.footer{
+    background: blue;
+}
