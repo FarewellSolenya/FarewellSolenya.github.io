@@ -2,12 +2,10 @@ body{
     background-color: azure;
     margin: 0;
 }
-#header{
-    top: 0;
-    background-color: aqua;
-    width: 100%;
-    position: fixed;
-    z-index: 1;
+#myHeader {
+    padding: 10px 16px;
+    background: #555;
+    color: #f1f1f1;
 }
 #main_container {
     width:100%;
@@ -20,3 +18,8 @@ body{
 #main_body {
     background-color: red;
 }
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
