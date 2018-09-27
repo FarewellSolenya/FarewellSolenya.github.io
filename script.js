@@ -1,26 +1,33 @@
-function onLoad(){
+
+$(function(){
     var header = document.getElementById("myHeader");
     var myContent = document.getElementById("myContent");
-    var offsetTop = header.offsetTop;
-    var y = header.clientHeight;
-    window.onscroll = function(){
-        if (window.pageYOffset >= offsetTop) {
-            header.classList.add("sticky");
-            myContent.style.paddingTop = y +'px';
+    
+    var y = $("#myHeader").innerHeight();
+    
+    var offsetTop = $("#myHeader").offset().top;
+    $(window).scroll(function() {
+        if ($(window).scrollTop() >= offsetTop) {
+            $("#myHeader").addClass("sticky");
+            $("#myContent").css('padding-top', y +'px')
             
         } else {
-            header.classList.remove("sticky");
-            myContent.style.paddingTop = '0px';
+            $("#myHeader").removeClass("sticky");
+            $("#myContent").css('padding-top', '0px')
         }
-    };
-    myContent.innerHTML = document.getElementById("MainPage").innerHTML;
-};
-function MainPage(){
-    myContent.innerHTML = document.getElementById("MainPage").innerHTML;
-}
-function InfoPage(){
-    myContent.innerHTML = document.getElementById("InfoPage").innerHTML;
-}
-function ContactPage(){
-    myContent.innerHTML = document.getElementById("ContactPage").innerHTML;
-}
+    });
+
+    $("#myContent").html($("#MainPage").html());
+
+    $("#MainPageButton").click(function(){
+        $("#myContent").html($("#MainPage").html());
+    });
+
+    $("#InfoPageButton").click(function(){
+        $("#myContent").html($("#InfoPage").html());
+    });
+
+    $("#ContactPageButton").click(function(){
+        $("#myContent").html($("#ContactPage").html());
+    });
+});
