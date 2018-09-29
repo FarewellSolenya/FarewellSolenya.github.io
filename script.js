@@ -3,11 +3,11 @@ $(function(){
     var header = document.getElementById("myHeader");
     var myContent = document.getElementById("myContent");
     var y = $("#myHeader").innerHeight();
+    var offsetTop = $("#myHeader").offset().top;
 
     $("#myHeader").css('width', ($("#myContent").innerWidth() - 32) + 'px');
-    
-    var offsetTop = $("#myHeader").offset().top;
     $(window).scroll(function() {
+        $("#myHeader").css('width', ($("#myContent").innerWidth() - 32) + 'px');
         if ($(window).scrollTop() >= offsetTop) {
             $("#myHeader").addClass("sticky");
             $("#myContent").css('padding-top', y +'px');
