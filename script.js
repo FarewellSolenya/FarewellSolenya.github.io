@@ -8,6 +8,7 @@ $(function(){
     $("#myHeader").css('width', ($("#myContent").innerWidth() - 32) + 'px');
     $(window).scroll(function() {
         $("#myHeader").css('width', ($("#myContent").innerWidth() - 32) + 'px');
+        $("#myContent").html("szerokosc :"+ $("#myContent").innerWidth());
         if ($(window).scrollTop() >= offsetTop) {
             $("#myHeader").addClass("sticky");
             $("#myContent").css('padding-top', y +'px');
