@@ -1,12 +1,12 @@
 body{
     margin-top: 0;
-    background-color: lightgrey;
+    background-color: white;
     max-width: 1100px;
     margin-left: auto;
     margin-right: auto;
 }
 .top_container{
-    background: white;
+    background: lightgrey;
 }
 p#title{
     font-size: 50px;
@@ -27,7 +27,7 @@ p#title{
     background-color: gray;
 }
 .content{
-    background-color: rgb(255, 255, 255);
+    background-color: whitesmoke;
     text-align: center;
     
 }
@@ -37,6 +37,7 @@ p#title{
 }
 .footer{
     background: lightblue;
+    text-align: center;
 }
 p#foot{
     margin: 0;

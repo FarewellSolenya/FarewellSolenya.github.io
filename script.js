@@ -3,7 +3,9 @@ $(function(){
     var header = document.getElementById("myHeader");
     var myContent = document.getElementById("myContent");
     var y = $("#myHeader").innerHeight();
+
     $("#myHeader").css('width', ($("#myContent").innerWidth() - 32) + 'px');
+    
     var offsetTop = $("#myHeader").offset().top;
     $(window).scroll(function() {
         if ($(window).scrollTop() >= offsetTop) {
