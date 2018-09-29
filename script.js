@@ -2,18 +2,17 @@
 $(function(){
     var header = document.getElementById("myHeader");
     var myContent = document.getElementById("myContent");
-    
     var y = $("#myHeader").innerHeight();
-    
+    $("#myHeader").css('width', ($("#myContent").innerWidth() - 32) + 'px');
     var offsetTop = $("#myHeader").offset().top;
     $(window).scroll(function() {
         if ($(window).scrollTop() >= offsetTop) {
             $("#myHeader").addClass("sticky");
-            $("#myContent").css('padding-top', y +'px')
+            $("#myContent").css('padding-top', y +'px');
             
         } else {
             $("#myHeader").removeClass("sticky");
-            $("#myContent").css('padding-top', '0px')
+            $("#myContent").css('padding-top', '0px');
         }
     });
 
