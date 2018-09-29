@@ -1,5 +1,15 @@
 body{
-    background-color: azure;
+    margin-top: 0;
+    background-color: lightgrey;
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.top_container{
+    background: white;
+}
+p#title{
+    font-size: 50px;
     margin: 0;
 }
 .header {
@@ -19,12 +29,17 @@ body{
 .content{
     background-color: rgb(255, 255, 255);
     text-align: center;
+    
 }
 .sticky {
     position: fixed;
     top: 0;
-    width: 100%
+    width: 1068px;
 }
 .footer{
-    background: blue;
+    background: lightblue;
+}
+p#foot{
+    margin: 0;
+    font-size: 30px;
 }
