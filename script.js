@@ -1,10 +1,8 @@
 
 $(function(){
-    var header = document.getElementById("myHeader");
-    var myContent = document.getElementById("myContent");
+    
     var y = $("#myHeader").innerHeight();
     var offsetTop = $("#myHeader").offset().top;
-
     $("#myHeader").css('width', ($("#myContent").innerWidth() - 32) + 'px');
     $(window).scroll(function() {
         if ($(window).scrollTop() >= offsetTop) {
@@ -19,7 +17,6 @@ $(function(){
 
     $(window).resize(function(){
         $("#myHeader").css('width', ($("#myContent").innerWidth() - 32) + 'px');
-        $("#info").html("content width "+ $("#myContent").innerWidth() + " header with " + $("#myHeader").innerWidth());
     });
 
     $("#myContent").html($("#MainPage").html());
